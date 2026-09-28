@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dra. Thais Rosa.</title>
+<meta name="description" content="Estética avançada com resultados reais. . Agende pelo WhatsApp.">
+
+<!-- Tailwind CSS via CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          coffee: '#24150E',
+          taupe: '#856D55',
+          sand: '#B3A28E',
+          cream: '#FFFFFF',
+        },
+        fontFamily: {
+          display: ['"Cormorant Garamond"', 'serif'],
+          body: ['"Jost"', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; background-color: #FFFFFF; }
+  h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
+
+  .eyebrow {
+    letter-spacing: 0.25em;
+  }
+
+  /* Organic divider shapes (signature element) */
+  .organic-divider { display: block; width: 100%; height: auto; }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Custom scrollbar accent */
+  ::selection { background-color: #B3A28E; color: #24150E; }
+
+  /* WhatsApp pulse */
+  @keyframes pulseRing {
+    0% { box-shadow: 0 0 0 0 rgba(133,109,85,0.55); }
+    70% { box-shadow: 0 0 0 14px rgba(133,109,85,0); }
+    100% { box-shadow: 0 0 0 0 rgba(133,109,85,0); }
+  }
+  .pulse-wa { animation: pulseRing 2.6s infinite; }
+
+  /* Testimonial card hover lift */
+  .lift { transition: transform 0.35s ease, box-shadow 0.35s ease; }
+  .lift:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -18px rgba(36,21,14,0.35); }
+
+  .underline-grow { position: relative; }
+  .underline-grow::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background-color: #856D55;
+    transition: width 0.4s ease;
+  }
+  .underline-grow:hover::after { width: 100%; }
+
+  /* Mobile menu transition */
+  #mobile-menu { transition: max-height 0.4s ease, opacity 0.3s ease; }
+</style>
+</head>
+
+<body class="text-coffee antialiased overflow-x-hidden">
+
+<!-- ===================== HEADER ===================== -->
+<header id="topo" class="fixed top-0 left-0 w-full z-50 bg-cream/90 backdrop-blur-sm border-b border-sand/30">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="flex items-center justify-between h-18 py-4">
+      <a href="#topo" class="font-display text-2xl sm:text-3xl tracking-wide text-coffee">
+        Dra. <span class="text-taupe italic">Thais Rosa</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-9 font-body text-sm uppercase tracking-widest text-coffee/80">
+        <a href="#servicos" class="underline-grow hover:text-coffee transition">Serviços</a>
+        <a href="#beneficios" class="underline-grow hover:text-coffee transition">Benefícios</a>
+        <a href="#depoimentos" class="underline-grow hover:text-coffee transition">Depoimentos</a>
+        <a href="#contato" class="underline-grow hover:text-coffee transition">Contato</a>
+      </nav>
+
+      <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener"
+         class="hidden md:inline-flex items-center gap-2 bg-coffee text-cream text-sm uppercase tracking-widest px-6 py-3 rounded-full hover:bg-taupe transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.17-8.25 8.17Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+        WhatsApp
+      </a>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" aria-label="Abrir menu" class="md:hidden text-coffee p-2">
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden max-h-0 opacity-0 overflow-hidden bg-cream border-t border-sand/30">
+    <nav class="flex flex-col px-6 py-5 gap-5 font-body text-base uppercase tracking-widest text-coffee">
+      <a href="#servicos" class="mobile-link">Serviços</a>
+      <a href="#beneficios" class="mobile-link">Benefícios</a>
+      <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+      <a href="#contato" class="mobile-link">Contato</a>
+      <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener"
+         class="mt-2 inline-flex justify-center items-center gap-2 bg-coffee text-cream text-sm px-6 py-3 rounded-full">
+        Agendar no WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="relative pt-32 pb-20 md:pt-44 md:pb-28 bg-cream overflow-hidden" id="hero">
+  <!-- soft organic blob background -->
+  <div class="absolute -top-24 -right-24 w-72 h-72 md:w-[28rem] md:h-[28rem] rounded-full bg-sand/30 blur-3xl"></div>
+  <div class="absolute bottom-0 -left-20 w-56 h-56 md:w-80 md:h-80 rounded-full bg-taupe/20 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 grid md:grid-cols-2 gap-12 md:gap-8 items-center">
+    <div class="reveal">
+      <span class="eyebrow text-taupe text-xs sm:text-sm uppercase font-medium">Estética avançada </span>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] mt-4 text-coffee">
+        Sua pele merece <span class="italic text-taupe">tempo</span>, técnica e cuidado.
+      </h1>
+      <p class="mt-6 text-base sm:text-lg text-coffee/70 max-w-md">
+        Protocolos personalizados de tratamento de pele, com foco em rejuvenescimento e gerenciamento do processo de envelhecimento, pensados para resultados reais, sem promessas vazias.
+      </p>
+
+      <div class="mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener"
+           class="pulse-wa inline-flex items-center justify-center gap-2 bg-coffee text-cream px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-taupe transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.17-8.25 8.17Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Agendar avaliação
+        </a>
+        <a href="#servicos" class="inline-flex items-center justify-center gap-2 border border-coffee/30 text-coffee px-8 py-4 rounded-full text-sm uppercase tracking-widest hover:border-coffee transition-colors duration-300">
+          Ver serviços
+        </a>
+      </div>
+
+      <div class="mt-10 flex items-center gap-8">
+        <div>
+          <p class="font-display text-3xl text-coffee"></p>
+          <p class="text-xs uppercase tracking-widest text-coffee/60"></p>
+        </div>
+        
+        <div>
+          <p class="font-display text-3xl text-coffee"></p>
+          <p class="text-xs uppercase tracking-widest text-coffee/60"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal relative">
+      <div class="rounded-[2.5rem] overflow-hidden shadow-2xl shadow-coffee/20 aspect-[4/5] max-w-md mx-auto">
+        <img src="imagens/IMG_0861.JPEG" style="width: 500px; height: auto;"
+             alt="" class="w-full h-full object-cover" loading="lazy">
+      </div>
+      <div class="absolute -bottom-6 -left-6 sm:-left-10 bg-cream rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 border border-sand/30">
+        <div class="flex text-taupe">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="text-sm">
+          <p class="font-medium text-coffee leading-none">5</p>
+          <p class="text-coffee/50 text-xs">Entre as avaliações</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- organic divider -->
+  <svg class="organic-divider mt-16 md:mt-24" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,10 1440,50 L1440,100 L0,100 Z" fill="#B3A28E" fill-opacity="0.25"></path>
+  </svg>
+</section>
+
+<!-- ===================== SERVIÇOS ===================== -->
+<section id="servicos" class="py-20 md:py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="eyebrow text-taupe text-xs sm:text-sm uppercase font-medium">Nossos serviços</span>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl mt-3 text-coffee">Tratamentos feitos sob medida</h2>
+      <p class="mt-4 text-coffee/70">Cada protocolo começa com uma consulta avaliativa personalizada, pois cada rosto pede um olhar diferente.</p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="reveal lift group rounded-3xl overflow-hidden border border-sand/30 bg-white">
+        <div class="h-56 overflow-hidden">
+          <img src="imagens/pele1.jpg" style="width: 370px; height: 300px;" alt="Tratamentos de pele" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-2xl text-coffee">Tratamentos de pele</h3>
+          <p class="mt-3 text-sm text-coffee/70 leading-relaxed">Tratamentos combinados para promover qualidade e saúde da pele.</p>
+          <ul class="mt-4 space-y-2 text-sm text-coffee/70">
+            <!-- li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span></li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span></li -->
+          </ul>
+          <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 text-coffee text-sm uppercase tracking-widest underline-grow">
+            Agendar →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="reveal lift group rounded-3xl overflow-hidden border border-sand/30 bg-white md:mt-8">
+        <div class="h-56 overflow-hidden">
+          <img src="imagens/Preenchimento.jpg" style="width: 500px; height: auto; margin-top: -50px;" alt="Preenchedor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-2xl text-coffee">Preenchedores faciais</h3>
+          <p class="mt-3 text-sm text-coffee/70 leading-relaxed">Utilização de ácido hialurônico em pontos de embelezamento, suporte e definição facial.</p>
+          <ul class="mt-4 space-y-2 text-sm text-coffee/70">
+            <!-- li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span></li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span></li -->
+          </ul>
+          <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 text-coffee text-sm uppercase tracking-widest underline-grow">
+            Agendar →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="reveal lift group rounded-3xl overflow-hidden border border-sand/30 bg-white">
+        <div class="h-56 overflow-hidden">
+          <img src="imagens/Botox1.jpg" alt="Botox" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-2xl text-coffee">Toxina Botulínica</h3>
+          <p class="mt-3 text-sm text-coffee/70 leading-relaxed">Relaxamento da musculatura responsável pelas linhas de expressão prevenindo a formação de rugas.</p>
+          <ul class="mt-4 space-y-2 text-sm text-coffee/70">
+            <!-- li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span>Henna incluída</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-taupe"></span>Manutenção mensal</li -->
+          </ul>
+          <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 text-coffee text-sm uppercase tracking-widest underline-grow">
+            Agendar →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BENEFÍCIOS ===================== -->
+<section id="beneficios" class="py-20 md:py-28 bg-coffee text-cream relative overflow-hidden">
+  <div class="absolute top-10 right-10 w-64 h-64 rounded-full bg-taupe/20 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal order-2 md:order-1">
+      <span class="eyebrow text-sand text-xs sm:text-sm uppercase font-medium">Por que escolher nosso atendimento</span>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl mt-3 leading-tight">Cuidado consciente, do primeiro contato ao pós-tratamento.</h2>
+
+      <div class="mt-10 space-y-8">
+        <div class="flex gap-5">
+          <div class="shrink-0 w-11 h-11 rounded-full bg-taupe/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-sand"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl">Profissional Especialiazada</h3>
+            <p class="mt-1 text-sm text-cream/70">Biomédica desde 2020, especialista em Estética com diversos cursos de aprimoramento.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="shrink-0 w-11 h-11 rounded-full bg-taupe/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-sand"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl">Pontualidade e conforto</h3>
+            <p class="mt-1 text-sm text-cream/70">Ambiente climatizado, horários flexíveis e agendamento fácil pelo WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="shrink-0 w-11 h-11 rounded-full bg-taupe/20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 text-sand"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21c-4.97 0-9-4-9-9 0-4.97 4-9 9-9s9 4.03 9 9c0 5-4.03 9-9 9z M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3 class="font-display text-xl">Produtos de alta qualidade</h3>
+            <p class="mt-1 text-sm text-cream/70">Ativos selecionados e protocolos validados para resultados seguros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal order-1 md:order-2 relative">
+      <div class="rounded-[2.5rem] overflow-hidden shadow-2xl aspect-square max-w-md mx-auto">
+        <img src="imagens/1787785090598.png" alt="Ambiente do studio de estética" class="w-full h-full object-cover" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section id="depoimentos" class="py-20 md:py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <span class="eyebrow text-taupe text-xs sm:text-sm uppercase font-medium">Quem já viveu a experiência</span>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl mt-3 text-coffee">Depoimentos</h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-8">
+
+      <div class="reveal lift bg-white border border-sand/30 rounded-3xl p-8">
+        <div class="flex text-taupe mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="font-display italic text-lg text-coffee leading-relaxed">"Ótima profissional, muito atenciosa aos detalhes. Tirou todas as dúvidas e está sempre disponível para ajudar, o ambiente também é acolhedor e agradável."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/26434417-padrao-avatar-perfil-icone-do-social-meios-de-comunicacao-do-utilizador-foto-vetor.jpg" class="w-11 h-11 rounded-full object-cover" alt="Cliente Mariana Souza">
+          <div>
+            <p class="text-sm font-medium text-coffee">Bruno Kaiser</p>
+            <p class="text-xs text-coffee/50">Tratamento de Pele</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal lift bg-white border border-sand/30 rounded-3xl p-8 md:mt-8">
+        <div class="flex text-taupe mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="font-display italic text-lg text-coffee leading-relaxed">"O trabalho da Dra. Thaís é especial, impecável, perfeito. Eu sempre tive medo de mexer no meu rosto, mas diante dos resultados que ela já havia mostrado em sua página do Instagram, tomei coragem e fiz uma rinomodelação e foi a melhor decisão que tomei, o resultado ficou perfeito, do jeitinho que eu queria! Com certeza irei fazer mais procedimentos! Nota mil! Só façam!!!!"</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/26434417-padrao-avatar-perfil-icone-do-social-meios-de-comunicacao-do-utilizador-foto-vetor.jpg" class="w-11 h-11 rounded-full object-cover" alt="Cliente Camila Alves">
+          <div>
+            <p class="text-sm font-medium text-coffee">Ribas</p>
+            <p class="text-xs text-coffee/50">Preenchimento de rinomodelação</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal lift bg-white border border-sand/30 rounded-3xl p-8">
+        <div class="flex text-taupe mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="font-display italic text-lg text-coffee leading-relaxed">"Atendimento Exelente , profissional muito dedicada, trabalho feito com amor a todas as suas pacientes."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/26434417-padrao-avatar-perfil-icone-do-social-meios-de-comunicacao-do-utilizador-foto-vetor.jpg" class="w-11 h-11 rounded-full object-cover" alt="Cliente Fernanda Lima">
+          <div>
+            <p class="text-sm font-medium text-coffee">Lucineia</p>
+            <p class="text-xs text-coffee/50">Toxina Botulínica</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section id="contato" class="py-20 md:py-24 bg-taupe relative overflow-hidden">
+  <svg class="organic-divider absolute top-0 left-0 -translate-y-full" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,50 C240,10 480,90 720,50 C960,10 1200,90 1440,40 L1440,100 L0,100 Z" fill="#856D55"></path>
+  </svg>
+  <div class="relative max-w-3xl mx-auto px-5 sm:px-8 text-center reveal">
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-cream leading-tight">Vamos cuidar da sua pele com o tempo que ela merece?</h2>
+    <p class="mt-4 text-cream/80">Fale agora com nossa equipe e agende sua consulta avaliativa.</p>
+    <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener"
+       class="mt-8 inline-flex items-center justify-center gap-2 bg-coffee text-cream px-9 py-4 rounded-full text-sm uppercase tracking-widest hover:bg-cream hover:text-coffee transition-colors duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.17-8.25 8.17Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+      Chamar no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-coffee text-cream pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    <div>
+      <p class="font-display text-2xl">Dra. <span class="text-sand italic">Thais Rosa</span></p>
+      <p class="mt-4 text-sm text-cream/60 leading-relaxed">Estética facial e corporal com técnica, escuta e resultados que se sentem na pele.</p>
+      <div class="flex gap-4 mt-6">
+        <a href="https://www.instagram.com/drathais.rosa/" aria-label="Instagram" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-taupe hover:border-taupe transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4.6.24 1.03.52 1.48.97.45.45.73.88.97 1.48.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43-.24.6-.52 1.03-.97 1.48-.45.45-.88.73-1.48.97-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4-.6-.24-1.03-.52-1.48-.97-.45-.45-.73-.88-.97-1.48-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43.24-.6.52-1.03.97-1.48.45-.45.88-.73 1.48-.97.46-.16 1.26-.35 2.43-.4C8.42 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.14 0-3.5.01-4.73.07-.96.04-1.48.2-1.83.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.35-.3.87-.34 1.83-.06 1.23-.07 1.59-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.83.18.46.39.78.73 1.13.35.34.67.55 1.13.73.35.14.87.3 1.83.34 1.23.06 1.59.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.83-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.35.3-.87.34-1.83.06-1.23.07-1.59.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.83-.18-.46-.39-.78-.73-1.13-.35-.34-.67-.55-1.13-.73-.35-.14-.87-.3-1.83-.34-1.23-.06-1.59-.07-4.73-.07Zm0 4.1a5.9 5.9 0 1 1 0 11.8 5.9 5.9 0 0 1 0-11.8Zm0 1.8a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2Zm6.1-1.99a1.38 1.38 0 1 1-2.76 0 1.38 1.38 0 0 1 2.76 0Z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/people/Dra-Thaís-Rosa/61577650777850/#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-taupe hover:border-taupe transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M13.5 21v-7.9h2.65l.4-3.08h-3.05V8.05c0-.89.25-1.5 1.52-1.5h1.62V3.8c-.28-.04-1.24-.12-2.36-.12-2.34 0-3.94 1.43-3.94 4.05v2.26H7.68v3.08h2.66V21h3.16Z"/></svg>
+        </a>
+        <a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-taupe hover:border-taupe transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-sm uppercase tracking-widest text-sand mb-4">Navegação</p>
+      <ul class="space-y-3 text-sm text-cream/70">
+        <li><a href="#servicos" class="hover:text-cream transition">Serviços</a></li>
+        <li><a href="#beneficios" class="hover:text-cream transition">Benefícios</a></li>
+        <li><a href="#depoimentos" class="hover:text-cream transition">Depoimentos</a></li>
+        <li><a href="#contato" class="hover:text-cream transition">Contato</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-sm uppercase tracking-widest text-sand mb-4">Contato</p>
+      <ul class="space-y-3 text-sm text-cream/70">
+        <li>(41) 99565-4238</li>
+        <li></li>
+        <li>Av. Candido de Abreu, 427, Centro Cívico - Curitiba/PR</li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="text-sm uppercase tracking-widest text-sand mb-4">Horário</p>
+      <ul class="space-y-3 text-sm text-cream/70">
+        <li>Segunda a Sexta: 9h – 19h</li>
+        <li>Sábado: 9h – 16h</li>
+        <li>Domingo: Fechado</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 mt-12 pt-6 border-t border-cream/10 flex flex-col sm:flex-row justify-between items-center gap-3">
+    <p class="text-xs text-cream/50 text-center sm:text-left">© 2026 Dra. Thais Rosa Estética Avançada. Todos os direitos reservados.</p>
+    <p class="text-xs text-cream/50">Feito com cuidado para transformar peles e histórias.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="https://wa.me/5541995654238?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20avaliativa." target="_blank" rel="noopener"
+   aria-label="Fale conosco no WhatsApp"
+   class="pulse-wa fixed bottom-6 right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition-transform duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF" class="w-7 h-7 sm:w-8 sm:h-8"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.17-8.25 8.17Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.23.89 2.41 1.02 2.58.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+</a>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+      mobileMenu.style.opacity = '1';
+      iconOpen.classList.add('hidden');
+      iconClose.classList.remove('hidden');
+    } else {
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.style.opacity = '0';
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    }
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuOpen = false;
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.style.opacity = '0';
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // Scroll reveal animation
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
